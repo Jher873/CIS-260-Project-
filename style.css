@@ -14,7 +14,7 @@ html, body {
 
 /* Body Styling */
 body {
-    background-color: rgb(253, 254, 255);
+    background-color: rgb(117, 52, 160);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@ body {
     width: 100%;
     height: 100vh;
     max-width: none;
-    background-color: rgb(154, 117, 212);
+    background-color: rgb(173, 92, 167);
     display: grid;
     grid-template-columns: 1fr 2fr; /* Two columns for layout */
     gap: 30px;
@@ -45,7 +45,7 @@ body {
 
 /* Right Column Styling (main content: experience, skills, etc.) */
 .right {
-    background-color: rgb(53, 90, 192);
+    background-color: rgb(17, 58, 170);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -60,7 +60,7 @@ body {
 /* Section Headers (e.g., Experience, Skills) */
 .h2 {
     background-color: rgb(4, 96, 150);
-    color: white;
+    color: rgb(190, 175, 38);
     padding: 8px;
     font-size: 1.5em;
     border-radius: 5px;
@@ -75,7 +75,7 @@ body {
     max-width: 180px; /* Make it responsive */
     height: auto;
     border-radius: 50%; /* Make the profile picture round */
-    border: 4px solid white; /* Border around the image */
+    border: 4px solid rgb(179, 50, 238); /* Border around the image */
     margin-bottom: 20px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Add a slight shadow for depth */
 }
