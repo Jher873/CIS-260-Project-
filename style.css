@@ -17,26 +17,26 @@ body {
     margin: 0px;
     display: grid;
     grid-template-columns: 2fr 4fr;
-    border: 2px solid black; /* Add or modify border size here */
+    border: 4px solid black; /* Increased border size */
 }
 .left {
     position: initial;
     background-color: rgb(126, 219, 231);
     padding: 20px;
-    border: 2px solid black; /* Add or modify border size here */
+    border: 4px solid black; /* Increased border size */
 }
 .right {
     position: initial;
     background-color: rgb(162, 202, 206);
     padding: 20px;
-    border: 2px solid black; /* Add or modify border size here */
+    border: 4px solid black; /* Increased border size */
 }
 .image, .Contact, .Skills, .Language, .Hobbies, .title, 
 .Summary, .Experience, .Education, .project {
     margin-bottom: 30px;
-    border: 2px solid black; /* Add or modify border size here */
+    border: 4px solid black; /* Increased border size */
 }
 .h2 {
     background-color: rgb(4, 96, 150);
-    border: 2px solid black; /* Add or modify border size here */
+    border: 4px solid black; /* Increased border size */
 }
