@@ -1,59 +1,130 @@
+/* General Reset and Box Model */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Set full height and width for body and html */
 html, body {
     height: 100%;
     width: 100%;
+    font-family: 'Arial', sans-serif; /* Choose a clean, professional font */
 }
 
+/* Body Styling */
 body {
     background-color: rgb(253, 254, 255);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0; /* Remove padding to use full page size */
-    margin: 0; /* Ensure no margin is applied */
+    padding: 0;
+    margin: 0;
 }
 
+/* Main container for resume content */
 .full {
     width: 100%;
-    height: 100vh; /* Use viewport height for full screen */
-    max-width: none; /* Remove max-width to allow full screen width */
+    height: 100vh;
+    max-width: none;
     background-color: rgb(245, 239, 231);
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Adjust the grid columns */
-    gap: 20px;
-    padding: 20px;
-    overflow: hidden; /* Ensure content fits within the screen */
+    grid-template-columns: 1fr 2fr; /* Two columns for layout */
+    gap: 30px;
+    padding: 30px;
+    overflow: hidden;
 }
 
-.left, .right {
-    padding: 20px;
-}
-
+/* Left Column Styling (personal info, etc.) */
 .left {
     background-color: rgb(126, 219, 231);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Right Column Styling (main content: experience, skills, etc.) */
 .right {
     background-color: rgb(162, 202, 206);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Section Styling */
 .image, .Contact, .Skills, .Language, .Hobbies, .title, 
 .Summary, .Experience, .Education, .project {
+    margin-bottom: 25px;
+}
+
+/* Section Headers (e.g., Experience, Skills) */
+.h2 {
+    background-color: rgb(4, 96, 150);
+    color: white;
+    padding: 8px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* Profile Picture Styling */
+.profile-pic {
+    width: 100%;
+    max-width: 180px; /* Make it responsive */
+    height: auto;
+    border-radius: 50%; /* Make the profile picture round */
+    border: 4px solid white; /* Border around the image */
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Add a slight shadow for depth */
+}
+
+/* Resume Section Styling for Text */
+h3, p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Styling for Contact, Skills, and Hobbies Sections */
+.Contact, .Skills, .Language, .Hobbies {
+    padding-left: 20px;
+    font-size: 1.1em;
+}
+
+/* Specific Section Styling */
+.Summary {
+    font-style: italic;
+    color: #333;
     margin-bottom: 30px;
 }
 
-.h2 {
-    background-color: rgb(4, 96, 150);
+/* Experience and Education - Clean list style */
+.Experience, .Education {
+    list-style-type: none;
+    padding-left: 0;
 }
 
-.profile-pic {
-    width: 100%; /* Make the profile image responsive */
-    max-width: 200px; /* Set a maximum width */
-    height: auto; /* Ensure it scales proportionally */
+.Experience li, .Education li {
+    margin-bottom: 15px;
 }
 
+.Experience .title, .Education .title {
+    font-weight: bold;
+    color: rgb(4, 96, 150); /* Dark blue for titles */
+}
+
+.project {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer (if any) */
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 30px;
+}
