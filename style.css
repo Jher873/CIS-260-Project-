@@ -3,43 +3,57 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html, body {
     height: 100%;
     width: 100%;
 }
+
 body {
     background-color: rgb(253, 254, 255);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0; /* Remove padding to use full page size */
+    margin: 0; /* Ensure no margin is applied */
 }
+
 .full {
     width: 100%;
-    height: 100%;
-    max-width: 1200px;
+    height: 100vh; /* Use viewport height for full screen */
+    max-width: none; /* Remove max-width to allow full screen width */
     background-color: rgb(245, 239, 231);
     display: grid;
     grid-template-columns: 1fr 2fr; /* Adjust the grid columns */
     gap: 20px;
     padding: 20px;
+    overflow: hidden; /* Ensure content fits within the screen */
 }
+
+.left, .right {
+    padding: 20px;
+}
+
 .left {
     background-color: rgb(126, 219, 231);
-    padding: 20px;
 }
+
 .right {
     background-color: rgb(162, 202, 206);
-    padding: 20px;
 }
+
 .image, .Contact, .Skills, .Language, .Hobbies, .title, 
 .Summary, .Experience, .Education, .project {
     margin-bottom: 30px;
 }
+
 .h2 {
     background-color: rgb(4, 96, 150);
 }
+
 .profile-pic {
-    width: 200px; /* Set the desired width */
-    height: 200px; /* Set the desired height */
+    width: 100%; /* Make the profile image responsive */
+    max-width: 200px; /* Set a maximum width */
+    height: auto; /* Ensure it scales proportionally */
 }
+
