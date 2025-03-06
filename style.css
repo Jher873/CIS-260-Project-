@@ -27,7 +27,7 @@ body {
     width: 100%;
     height: 100vh;
     max-width: none;
-    background-color: rgb(245, 239, 231);
+    background-color: rgb(154, 117, 212);
     display: grid;
     grid-template-columns: 1fr 2fr; /* Two columns for layout */
     gap: 30px;
@@ -37,7 +37,7 @@ body {
 
 /* Left Column Styling (personal info, etc.) */
 .left {
-    background-color: rgb(126, 219, 231);
+    background-color: rgb(38, 115, 216);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -45,7 +45,7 @@ body {
 
 /* Right Column Styling (main content: experience, skills, etc.) */
 .right {
-    background-color: rgb(162, 202, 206);
+    background-color: rgb(53, 90, 192);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -125,6 +125,6 @@ h3, p {
 footer {
     text-align: center;
     font-size: 0.9em;
-    color: #347fb1;
+    color: #e67a16;
     margin-top: 30px;
 }
