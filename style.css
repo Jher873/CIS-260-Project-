@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #498dcc;
 }
 
 h1, h2, h3 {
@@ -14,93 +14,64 @@ p {
     margin: 5px 0;
 }
 
-/* Navigation Bar */
-.navbar {
-    background-color: #333;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+/* Banner at the Top */
+.banner {
+    background-color: #713ec4;
+    color: rgb(209, 47, 201);
+    text-align: center;
+    padding: 40px 20px;
 }
 
-.navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
+.banner h1 {
+    font-size: 40px;
     margin: 0;
 }
 
-.navbar ul li {
-    margin: 0 20px;
+.banner p {
+    font-size: 18px;
+    margin: 10px 0 0;
 }
 
-.navbar ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.navbar ul li a:hover {
-    color: #4CAF50;
-}
-
-/* Introduction Section */
-.introduction {
-    text-align: center;
-    padding: 100px 20px 50px;
-    background-color: #4CAF50;
-    color: white;
-    margin-top: 60px; /* Make space for fixed navbar */
-}
-
-.introduction h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.introduction p {
-    font-size: 20px;
-    margin-top: 0;
-}
-
-/* Resume Container */
-.resume-container {
+/* Resume Layout */
+.full {
     display: flex;
     justify-content: space-between;
-    margin: 50px auto;
+    margin: 50px 20px;
     max-width: 1200px;
-    padding: 0 20px;
+    margin-top: 20px;
 }
 
-/* Left Section (Personal Info, Contact, Skills) */
-.left-section {
+/* Left Section (Personal Info, Contact, Skills, Languages) */
+.left {
     width: 30%;
-    background-color: #fff;
+    background-color: #b6ad30;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.left-section h2 {
-    font-size: 24px;
+.left .image {
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.left-section ul {
-    list-style: none;
-    padding: 0;
+.left .profile-pic {
+    width: 100%;
+    border-radius: 50%;
+    max-width: 150px;
 }
 
-.left-section ul li {
-    margin: 10px 0;
+.left section {
+    margin-bottom: 30px;
 }
 
-/* Right Section (Summary, Experience) */
-.right-section {
+.left h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Right Section (Name, Title, Summary, Experience) */
+.right {
     width: 65%;
     padding: 20px;
     background-color: #fff;
@@ -108,17 +79,32 @@ p {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.right-section h2 {
-    font-size: 24px;
+.right .name h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.right .title p {
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
-.job {
+.right section {
     margin-bottom: 30px;
 }
 
+.right h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Job Section Styles */
+.job {
+    margin-bottom: 20px;
+}
+
 .job h3 {
-    font-size: 22px;
+    font-size: 20px;
     margin: 10px 0;
 }
 
@@ -127,14 +113,14 @@ p {
     padding-left: 20px;
 }
 
-/* Media Queries for Responsiveness */
+/* Responsive Design */
 @media screen and (max-width: 768px) {
-    .resume-container {
+    .full {
         flex-direction: column;
         align-items: center;
     }
 
-    .left-section, .right-section {
+    .left, .right {
         width: 90%;
         margin-bottom: 30px;
     }
