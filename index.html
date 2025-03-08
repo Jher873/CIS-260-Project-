@@ -10,6 +10,26 @@
 </head>
 
 <body>
+    <!-- Banner Section -->
+    <header>
+        <div class="banner">
+            <h1>Welcome to My Resume</h1>
+        </div>
+    </header>
+
+    <!-- Menu Button (for mobile or desktop navigation) -->
+    <nav>
+        <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+        <div id="menu" class="menu">
+            <ul>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#summary">Summary</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="full">
         <!-- Left Section: Personal Info, Contact, Skills, Languages, Hobbies -->
         <div class="left">
@@ -18,13 +38,13 @@
                 <img src="download.jpg" alt="Profile Picture" class="profile-pic">
             </div>
             <!-- Contact Information -->
-            <section class="Contact">
+            <section class="Contact" id="contact">
                 <h2>Contact</h2>
                 <p><strong>Email:</strong> JustinM_H@gmail.com</p>
                 <p><strong>Mobile:</strong> 123-456-7890</p>
             </section>
             <!-- Skills -->
-            <section class="Skills">
+            <section class="Skills" id="skills">
                 <h2>Skills</h2>
                 <ul>
                     <li><strong>Programming Languages:</strong> Python, Java, C++</li>
@@ -61,12 +81,12 @@
                 <p>Cyber Consultant</p>
             </div>
             <!-- Summary -->
-            <section class="Summary">
+            <section class="Summary" id="summary">
                 <h2>Summary</h2>
                 <p>To secure a challenging position in a reputable organization to expand my learning, knowledge, and skills.</p>
             </section>
             <!-- Experience -->
-            <section class="Experience">
+            <section class="Experience" id="experience">
                 <h2>Experience</h2>
                 <div class="job">
                     <h3>Senior Web Developer - Abc Webdev Pvt Ltd</h3>
@@ -79,6 +99,14 @@
             </section>
         </div>
     </div>
+
+    <script>
+        // Toggle menu visibility
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("show");
+        }
+    </script>
 </body>
 
 </html>
