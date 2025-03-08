@@ -1,94 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Justin H - Resume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Julius+Sans+One&family=Open+Sans&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <title>Resume</title>
 </head>
-
 <body>
-    <!-- Banner Section at the Top -->
-    <header class="banner">
-        <h1>Welcome to My Resume</h1>
-        <p>Hi, I'm Justin H. A passionate Cyber Consultant with expertise in web development and a love for technology.</p>
-    </header>
-
-    <div class="full">
-        <!-- Left Section: Personal Info, Contact, Skills, Languages, Hobbies -->
-        <div class="left">
-            <!-- Profile Picture -->
-            <div class="image">
-                <img src="download.jpg" alt="Profile Picture" class="profile-pic">
-            </div>
-            <!-- Contact Information -->
-            <section class="Contact">
-                <h2>Contact</h2>
-                <p><strong>Email:</strong> JustinM_H@gmail.com</p>
-                <p><strong>Mobile:</strong> 123-456-7890</p>
-            </section>
-            <!-- Skills -->
-            <section class="Skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li><strong>Programming Languages:</strong> Python, Java, C++</li>
-                    <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript, React</li>
-                    <li><strong>Backend:</strong> Node.js</li>
-                </ul>
-            </section>
-            <!-- Languages -->
-            <section class="Language">
-                <h2>Languages</h2>
-                <ul>
-                    <li>English</li>
-                    <li>Spanish</li>
-                </ul>
-            </section>
-            <!-- Hobbies -->
-            <section class="Hobbies">
-                <h2>Hobbies</h2>
-                <ul>
-                    <li>Cooking</li>
-                    <li>Aviation</li>
-                </ul>
-            </section>
+  <div class="container">
+    <div class="leftPanel">
+      <img src="avatar.png" alt="Profile Picture"/>
+      <div class="details">
+        <div class="item bottomLineSeparator">
+          <h2>CONTACT</h2>
+          <div class="smallText">
+            <p>
+              <i class="fa fa-phone contactIcon" aria-hidden="true"></i>
+              (+33) 777 777 77
+            </p>
+            <p>
+              <i class="fa fa-envelope contactIcon" aria-hidden="true"></i>
+              <a href="mailto:lorem@ipsum.com">lorem@ipsum.com</a>
+            </p>
+            <p>
+              <i class="fa fa-map-marker contactIcon" aria-hidden="true"></i>
+              New York, USA
+            </p>
+            <p>
+              <i class="fa fa-linkedin-square contactIcon" aria-hidden="true"></i>
+              <a href="#">in/loremipsum</a>
+            </p>
+            <p class="lastParagrafNoMarginBottom">
+              <i class="fa fa-skype contactIcon" aria-hidden="true"></i>
+              <a href="#">loremipsum</a>
+            </p>
+          </div>
         </div>
-
-        <!-- Right Section: Name, Title, Summary, Experience -->
-        <div class="right">
-            <!-- Name -->
-            <div class="name">
-                <h1>JUSTIN H</h1>
+        <div class="item bottomLineSeparator">
+          <h2>SKILLS</h2>
+          <div class="smallText">
+            <!-- Skill items can be added dynamically from a database or API if necessary -->
+            <div class="skill">
+              <span>Accounting</span>
+              <span class="yearsOfExperience">14 years</span>
             </div>
-            <!-- Title -->
-            <div class="title">
-                <p>Cyber Consultant</p>
+            <div class="skill">
+              <span>Word</span>
+              <span class="yearsOfExperience">3 years</span>
             </div>
-            <!-- Summary -->
-            <section class="Summary">
-                <h2>Summary</h2>
-                <p>As an IT professional with a meticulous approach to troubleshooting and a dedication to staying at the forefront of technological advancements, I am committed to continuous skill development and applying emerging technologies. My background in healthcare has honed my customer service abilities and provided a deep understanding of addressing diverse user needs across various demographics.Transitioning into computer science, I have developed expertise in IT infrastructure and security practices, with hands-on experience managing and securing systems across multiple platforms, including Windows 10/11, Linux, and macOS.
-
-                    I have hands-on experience working with virtualization technologies (VMware, Hyper-V) and configuring virtual machines to optimize resource allocation and performance. My practical skills extend to networking, where I have configured and maintained Cisco routers and switches to ensure robust, scalable network environments. As an AWS Cloud Practitioner Certified professional, I am proficient in deploying cloud-based solutions, managing security protocols, and optimizing cloud architecture for performance and cost efficiency.
-                    
-                    By combining my technical knowledge with my customer-oriented background, I aim to contribute to the development and implementation of innovative IT solutions that enhance system performance, security, and user experience.</p>
-            </section>
-            <!-- Experience -->
-            <section class="Experience">
-                <h2>Experience</h2>
-                <div class="job">
-                    <h3>Senior Web Developer - Abc Webdev Pvt Ltd</h3>
-                    <p><em>January 2022 to Present</em></p>
-                    <ul>
-                        <li>Actively engaged in web design and development.</li>
-                        <li>Responsible for project planning and design.</li>
-                    </ul>
-                </div>
-            </section>
+            <div class="skill">
+              <span>Powerpoint</span>
+              <span class="yearsOfExperience">3 years</span>
+            </div>
+            <!-- Add other skills similarly -->
+          </div>
         </div>
+        <div class="item">
+          <h2>EDUCATION</h2>
+          <div class="smallText">
+            <p class="bolded">Bachelor of Economics</p>
+            <p>The University of Sydney</p>
+            <p>2010 - 2014</p>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <div class="rightPanel">
+      <h1>Jhon Doe</h1>
+      <h3>Accountant</h3>
+
+      <div>
+        <h2>About me</h2>
+        <div class="smallText">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis, justo sed feugiat pulvinar.
+          </p>
+          <p>
+            Vivamus non magna quis neque viverra finibus quis a tortor.
+          </p>
+        </div>
+      </div>
+
+      <div class="workExperience">
+        <h2>Work experience</h2>
+        <ul>
+          <li>
+            <div class="jobPosition">
+              <span class="bolded">Accountant</span>
+              <span>Jun 2014 - Sept 2015</span>
+            </div>
+            <div class="projectName bolded">
+              <span>Accounting project name | Company name</span>
+            </div>
+            <div class="smallText">
+              <p>
+                Quisque rutrum mollis ornare. In pharetra diam libero, non interdum dui imperdiet quis.
+              </p>
+              <ul>
+                <li>Integer commodo ullamcorper mauris, id condimentum lorem elementum sed.</li>
+              </ul>
+              <p><span class="bolded">Skills: </span>Accounting, Word, Powerpoint</p>
+            </div>
+          </li>
+
+          <!-- Add more work experience items similarly -->
+
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
+</html>
 
 </html>
