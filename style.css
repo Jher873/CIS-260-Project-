@@ -16,8 +16,8 @@ p {
 
 /* Banner at the Top */
 .banner {
-    background-color: #b423c7;
-    color: rgb(221, 224, 44);
+    background-color: #175bd8;
+    color: rgb(234, 236, 99);
     text-align: center;
     padding: 40px 20px;
 }
@@ -56,8 +56,8 @@ p {
 }
 
 .left .profile-pic {
-    width: 450px; /* Revert to original width */
-    height: 450px; /* Revert to original height */
+    width: 250px; /* Revert to original width */
+    height: 250px; /* Revert to original height */
     border-radius: 50%; /* Ensure the image is circular */
     object-fit: fill; /* Maintain aspect ratio and cover the area */
 }
