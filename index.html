@@ -10,40 +10,34 @@
 </head>
 
 <body>
-    <!-- Centered Introduction Section -->
-    <section class="introduction">
-        <h1>Welcome to My Resume</h1>
-        <p>Hi, I'm Justin H. A passionate Cyber Consultant with expertise in web development and a love for technology.</p>
-    </section>
-
-    <!-- Menu Button (for mobile or desktop navigation) -->
-    <nav>
-        <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
-        <div id="menu" class="menu">
-            <ul>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#summary">Summary</a></li>
-            </ul>
-        </div>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#summary">Summary</a></li>
+        </ul>
     </nav>
 
-    <div class="full">
-        <!-- Left Section: Personal Info, Contact, Skills, Languages, Hobbies -->
-        <div class="left">
-            <!-- Profile Picture -->
-            <div class="image">
-                <img src="download.jpg" alt="Profile Picture" class="profile-pic">
-            </div>
-            <!-- Contact Information -->
-            <section class="Contact" id="contact">
+    <!-- Introduction Section -->
+    <section class="introduction" id="introduction">
+        <h1>Justin H</h1>
+        <p>Cyber Consultant | Web Developer | Lifelong Learner</p>
+    </section>
+
+    <!-- Main Resume Content -->
+    <div class="resume-container">
+        <!-- Left Section: Personal Info, Contact, Skills -->
+        <div class="left-section">
+            <section id="contact">
                 <h2>Contact</h2>
                 <p><strong>Email:</strong> JustinM_H@gmail.com</p>
                 <p><strong>Mobile:</strong> 123-456-7890</p>
             </section>
-            <!-- Skills -->
-            <section class="Skills" id="skills">
+
+            <section id="skills">
                 <h2>Skills</h2>
                 <ul>
                     <li><strong>Programming Languages:</strong> Python, Java, C++</li>
@@ -51,41 +45,11 @@
                     <li><strong>Backend:</strong> Node.js</li>
                 </ul>
             </section>
-            <!-- Languages -->
-            <section class="Language">
-                <h2>Languages</h2>
-                <ul>
-                    <li>English</li>
-                    <li>Spanish</li>
-                </ul>
-            </section>
-            <!-- Hobbies -->
-            <section class="Hobbies">
-                <h2>Hobbies</h2>
-                <ul>
-                    <li>Cooking</li>
-                    <li>Aviation</li>
-                </ul>
-            </section>
         </div>
 
         <!-- Right Section: Name, Title, Summary, Experience -->
-        <div class="right">
-            <!-- Name -->
-            <div class="name">
-                <h1>JUSTIN H</h1>
-            </div>
-            <!-- Title -->
-            <div class="title">
-                <p>Cyber Consultant</p>
-            </div>
-            <!-- Summary -->
-            <section class="Summary" id="summary">
-                <h2>Summary</h2>
-                <p>To secure a challenging position in a reputable organization to expand my learning, knowledge, and skills.</p>
-            </section>
-            <!-- Experience -->
-            <section class="Experience" id="experience">
+        <div class="right-section">
+            <section id="experience">
                 <h2>Experience</h2>
                 <div class="job">
                     <h3>Senior Web Developer - Abc Webdev Pvt Ltd</h3>
@@ -96,16 +60,14 @@
                     </ul>
                 </div>
             </section>
+
+            <section id="summary">
+                <h2>Summary</h2>
+                <p>To secure a challenging position in a reputable organization to expand my learning, knowledge, and skills.</p>
+            </section>
         </div>
     </div>
 
-    <script>
-        // Toggle menu visibility
-        function toggleMenu() {
-            var menu = document.getElementById("menu");
-            menu.classList.toggle("show");
-        }
-    </script>
 </body>
 
 </html>
