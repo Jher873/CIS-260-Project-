@@ -56,16 +56,16 @@ p {
 }
 
 .left .profile-pic {
-    width: 150px; /* Set the desired width */
-    height: 150px; /* Set the desired height */
+    width: 450px; /* Revert to original width */
+    height: 450px; /* Revert to original height */
     border-radius: 50%; /* Ensure the image is circular */
     object-fit: cover; /* Maintain aspect ratio and cover the area */
 }
 
 /* Remove redundant .profile-pic rule */
 .profile-pic {
-    /* width: 450px; */
-    /* height: 450px; */
+    /* width: 150px; */
+    /* height: 150px; */
     /* object-fit: fill; */
 }
 
