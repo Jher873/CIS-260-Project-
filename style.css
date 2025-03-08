@@ -62,8 +62,8 @@ p {
 }
 
 .profile-pic {
-    width: 250px; /* Set the desired width */
-    height: 250px; /* Set the desired height */
+    width: 450px; /* Set the desired width */
+    height: 450px; /* Set the desired height */
     object-fit: fill; /* Optional: to maintain aspect ratio and cover the area */
 }
 
