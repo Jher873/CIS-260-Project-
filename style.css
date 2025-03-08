@@ -16,7 +16,7 @@ p {
 
 /* Banner at the Top */
 .banner {
-    background-color: #ce1de6;
+    background-color: #47bfe4;
     color: rgb(196, 207, 46);
     text-align: center;
     padding: 40px 20px;
@@ -82,7 +82,7 @@ p {
 .right {
     width: 65%;
     padding: 20px;
-    background-color: #ba45ddef;
+    background-color: #63a3dfef;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
