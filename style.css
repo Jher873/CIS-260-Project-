@@ -56,15 +56,15 @@ p {
 }
 
 .left .profile-pic {
-    width: 100%;
-    border-radius: 50%;
-    max-width: 150px;
+    width: 150%;
+    border-radius: 150%;
+    max-width: 250px;
 }
 
 .profile-pic {
-    width: 150px; /* Set the desired width */
-    height: 150px; /* Set the desired height */
-    object-fit: cover; /* Optional: to maintain aspect ratio and cover the area */
+    width: 250px; /* Set the desired width */
+    height: 250px; /* Set the desired height */
+    object-fit: fill; /* Optional: to maintain aspect ratio and cover the area */
 }
 
 .left section {
