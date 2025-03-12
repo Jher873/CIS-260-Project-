@@ -1,135 +1,133 @@
-/* General Styles */
+/* General body styles */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #498dcc;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    transform: scale(0.8); /* Scale down the whole page by 90% */
+    transform-origin: top left; /* Keep the scaling anchored at the top-left corner */
 }
 
-h1, h2, h3 {
-    margin-bottom: 10px;
+
+/* Background Container */
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Keeps the background behind the content */
 }
 
-p {
-    margin: 5px 0;
+/* Background Image */
+.background-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6; /* Slightly transparent */
 }
 
-/* Banner at the Top */
+/* Stars, Twinkling, Clouds */
+.stars, .twinkling, .clouds {
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    pointer-events: none; /* Prevents interaction with background */
+}
+
+.stars {
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    animation: starsAnimation 200s infinite linear;
+}
+
+.twinkling {
+    background: url('https://www.transparenttextures.com/patterns/sparkle.png');
+    animation: twinklingAnimation 10s infinite;
+}
+
+.clouds {
+    background: url('https://www.transparenttextures.com/patterns/clouds.png');
+    animation: cloudsAnimation 120s infinite;
+}
+
+/* Animations */
+@keyframes starsAnimation {
+    0% { background-position: 0 0; }
+    100% { background-position: 5000px 5000px; }
+}
+
+@keyframes twinklingAnimation {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+@keyframes cloudsAnimation {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Banner Styles */
 .banner {
-    background-color: #175bd8;
-    color: rgb(234, 236, 99);
     text-align: center;
-    padding: 40px 20px;
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom: 4px solid #e4e128;
+    color: #e4e128; /* Add this line to change the text color */
 }
 
 .banner h1 {
-    font-size: 40px;
-    margin: 0;
+    font-size: 3em;
 }
 
 .banner p {
-    font-size: 18px;
-    margin: 10px 0 0;
+    font-size: 1.4em;
 }
 
-/* Resume Layout */
+/* Layout Styles for the Resume */
 .full {
     display: flex;
     justify-content: space-between;
-    margin: 50px 20px;
-    max-width: 1200px;
-    margin-top: 20px;
+    padding: 30px;
 }
 
-/* Left Section (Personal Info, Contact, Skills, Languages) */
 .left {
-    width: 30%;
-    background-color: #b6ad30;
+    flex: 0 0 30%;
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    color: #dadd2e; /* Add this line to change the text color */
 }
 
-.left .image {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.left .profile-pic {
-    width: 250px; /* Revert to original width */
-    height: 250px; /* Revert to original height */
-    border-radius: 50%; /* Ensure the image is circular */
-    object-fit: fill; /* Maintain aspect ratio and cover the area */
-}
-
-/* Remove redundant .profile-pic rule */
-.profile-pic {
-    /* width: 150px; */
-    /* height: 150px; */
-    /* object-fit: fill; */
-}
-
-.left section {
-    margin-bottom: 30px;
-}
-
-.left h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-/* Right Section (Name, Title, Summary, Experience) */
 .right {
-    width: 65%;
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
-    background-color: #3a7dbdef;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    color: #dadd2e; /* Add this line to change the text color */
 }
 
-.right .name h1 {
-    font-size: 36px;
+/* Section Styles */
+h2 {
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 
-.right .title p {
-    font-size: 18px;
-    margin-bottom: 20px;
+ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
-.right section {
-    margin-bottom: 30px;
+ul li {
+    margin: 5px 0;
 }
 
-.right h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-/* Job Section Styles */
-.job {
-    margin-bottom: 20px;
-}
-
-.job h3 {
-    font-size: 20px;
-    margin: 10px 0;
-}
-
-.job ul {
-    list-style: none;
-    padding-left: 20px;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .full {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .left, .right {
-        width: 90%;
-        margin-bottom: 30px;
-    }
+.profile-pic {
+    width: 420px; /* Adjust the size as needed */
+    height: 300px; /* Adjust the size as needed */
+    border-radius: 30px; /* Makes the image square with rounded edges */
+    object-fit: cover; /* Ensures the image covers the entire area */
+    object-position: center;
 }
